@@ -269,7 +269,7 @@ class AdvancedFilterForm(CleanWhiteSpacesMixin, forms.ModelForm):
                         "AdvancedFilterForm: skip invalid field - %s", e
                     )
                     continue
-            model_fields[field] = verbose_name + 'xxx'
+            model_fields[field] = verbose_name
         return model_fields
 
     def __init__(self, *args, **kwargs):
